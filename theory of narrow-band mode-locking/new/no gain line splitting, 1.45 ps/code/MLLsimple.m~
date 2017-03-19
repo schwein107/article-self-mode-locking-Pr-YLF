@@ -126,7 +126,7 @@ N1 = size(Eout,2);
 
 Kmag = 2^6;   % this factor is proportional to the refinement (interval between points) of the transformed frequency data;
             % the total frequency range is determined by the total time range and will not be changed. By changing Kmag, we are changing the number of points in the frequency domain, thus the refinement.
-Nplot = 20000;    % plotted frequency points, it determines the plotted frequency range, not the refinement. 
+Nplot = 4000;    % plotted frequency points, it determines the plotted frequency range, not the refinement. 
                 % this factor is related to the index of the frequency points
 Eoutfreq = fft(Eout(:,N1),N*Kmag);  % take the last pulse and transform it to frequency domain
 Ioutfreq = Eoutfreq.*conj(Eoutfreq)/(N*Kmag)^2;

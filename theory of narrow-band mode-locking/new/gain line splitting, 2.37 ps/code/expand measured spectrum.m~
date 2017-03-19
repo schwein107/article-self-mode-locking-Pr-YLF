@@ -1,0 +1,5 @@
+figure(4)
+factor = 1.1
+tuned_wavelength = (Data(:,1)-lamda)*factor+lamda;
+plot(tuned_wavelength,Data(:,2),'r')
+plot(wavelength*1e9,Ioutfreq(ind))
