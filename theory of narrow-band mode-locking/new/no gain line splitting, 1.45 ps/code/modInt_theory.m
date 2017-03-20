@@ -1,4 +1,4 @@
-function Eout = modInt_theory(Ein,m,fm)
+function Eout = modInt_theory(Ein,duration)
 % modInt_theory(Ein,m,fm)
 % intensity modulator model
 % written by Lam Quoc Huy
@@ -17,6 +17,7 @@ k = k-N/2;  % move the shape to the center, otherwise only half the pulse will a
 % -510
 % ...
 % 512
-Eout = Ein.*exp(-m/4*(2*pi*fm)^2*(k*Ts).^2);% Eq. (2.12)
+%% Eout = Ein.*exp(-m/4*(2*pi*fm)^2*(k*Ts).^2);% Eq. (2.12)
+Eout = Ein.*exp(-log(2)*(k*Ts).^2/(duration/2)^2);% Eq. Gaussian profile
                                             % k is the index, k*Ts is time-axit
 end

@@ -37,10 +37,10 @@ N = 2^13;			% number of samples in a block. Tblk = N * Ts = 102.4 ps
   % epsilon = 40;		% (dB) extinction ratio
   
 % modulation parameters
+    duration = 3.5e-12; % 3.5 ps
   %% m = 2942008.263764017999999;			% modulation index, by increasing it, the spectra is broadened, and the pulse is shortened.
-  m=0;
                     % it can be considered as a magnification factor of fm
-  fm = 93e6;		% modulation frequency, 
+  %% fm = 93e6;		% modulation frequency, 
                     % by increasing it, the shape will be narrowed
                     % when it is small than f3dB, when increasing it, the spectra is broadened and the pulse is shortened.
                     % while it exceed f3dB, it will only modulate single frequency, pulse will not form.
@@ -73,7 +73,7 @@ for ii = 1:N_pass
                                             % multiply by a gaussian-like filter in the time domain
 
 	% Eo = modInt(Eo,alpha,epsilon,m,fm,0.5);
-	Eo = modInt_theory(Eo,m,fm);    
+	Eo = modInt_theory(Eo,duration);    
 
 	Eo = Eo*atten;
 	% if mod(ii,N_pass/50)==0 % display part of the N_pass
