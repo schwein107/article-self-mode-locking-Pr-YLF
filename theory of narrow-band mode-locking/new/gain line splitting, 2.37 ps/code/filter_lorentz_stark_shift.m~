@@ -24,7 +24,6 @@ k = k';
 lorentz = 1./((f3dB/2)^2+((k+shift)/(Ts*N)).^2) + ...
           1./((f3dB/2)^2+((k-shift)/(Ts*N)).^2);
 % k/(Ts*N) is the frequency x-axis
-% shift/(Ts*N) is the frequency shift
 lorentz = lorentz/max(lorentz);
 Eout = Ein.*lorentz;
 end

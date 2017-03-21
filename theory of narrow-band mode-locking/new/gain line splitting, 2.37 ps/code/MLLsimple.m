@@ -37,7 +37,8 @@ N = 2^13;			% number of samples in a block. Tblk = N * Ts = 102.4 ps
   % epsilon = 40;		% (dB) extinction ratio
   
 % modulation parameters
-    duration = 45.1e-12;    % 45.1 ps
+    % duration = 45.1e-12;    % 45.1 ps
+    duration = 45e-12;    % 45.1 ps
   %% m = 15000;			% modulation index, by increasing it, the spectra is broadened, and the pulse is shortened.
                     % it can be considered as a magnification factor of fm
   %% fm = 93e6;		% modulation frequency, 
@@ -150,6 +151,8 @@ Tfil = 1./((f3dB/2)^2+(freq-shift*delta_freq).^2) + ...
 Tfil = Tfil/max(Tfil);  % normalization
 hold on
 plot(freq,Tfil,'r');
+% freq_Tfil = [freq, Tfil];
+% save freq_Tfil.txt -ascii freq_Tfil;
 
 figure(3)
 wavelength = c_const./(freq+Fcar);
