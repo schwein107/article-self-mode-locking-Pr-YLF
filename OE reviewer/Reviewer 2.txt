@@ -1,0 +1,32 @@
+Reviewer 2:
+Luo and coworkers demonstrate efficient self mode locked operation of Pr:YLF lasers in the visible spectral range at moderate average powers (0.68W at 522 nm and 1.44W at 639 nm). Additionally, the authors of the manuscript analyze theoretically the operation of the laser.
+
+In my view, the author¡¯s claim the results are the highest output power for mode locked lasers in the visible is simply not correct, given the existence of for example mode locked Raman lasers in the visible, which average powers reach routinely several watts and even shorter pulse durations at similar repetition rates. Perhaps the authors can claim that this result is the highest output average power from a praseodymium laser instead. The results are valuable, but the interpretation of the phenomena and adaptation to the model seem incomplete, it¡¯s lacking basic measurements such as pulse duration or waist sizes for the cavity modes. As it stands, is difficult to see how the model is in accordance with the experimental results and provide evidence of the author¡¯s claims.
+
+The style, presentation and formatting of the manuscript requires more work, there is also lack of sections for experimental and theoretical work. The text, structure and the interpretation of the results are confusing. In terms of formatting, for instance, the titles of the sections (in particular the heading of Reference section), the copyright year or the email address of the corresponding author is not correct, among others. Some other comments include:
+
+- In the introduction, the authors state: ¡°In scientific research, high quality lasers sources such as mode-locked lasers or single frequency lasers in the visible spectral region are always desirable since they can be used to explore the energy-level properties of other laser materials or generate efficient down-conversion laser emissions¡±.
+Single frequency lasers in the visible are not typically used for efficient down-conversion. Furthermore, the interest in the development of mode locked lasers in the visible is much broader than just exploring energy-level properties of other laser materials.
+
+- The authors say that ¡°Mode locking in the visible spectral region has been first realized in the middle of 1990s.¡±
+This is not correct. The first mode locked visible lasers date from the 70s (E. P. Ippen, C. V. Shank, and A. Dienes, Appl. Phys. Lett. 21, 348 (1972) for example), where Rhodamine 6G dyes were used as laser medium generating ultrashort pulses in the visible spectral range, with high average power and picosecond pulses.
+
+- The authors claim that ¡°9.7 ps and 8.5 ps are the shortest optical pulses in the visible region¡±. This is not correct either. There are numerous commercial and demonstrated lasers in the literature capable of generating sub-ps pulses at high average power in the literature.
+
+- The authors suggest that the reason for the poor performance of previous Pr:YLF lasers is due to the residual absorption introduced by cavity elements. I find this claim hard to agree with, since the average power is mainly a function of the slope efficiency and pump laser power. However, even if the slope efficiency is lowered by absorption in the cavity, it can still be overcome in order to achieve high average powers. It seems that the availability of suitable pump sources can be the limiting factor.
+
+- The experimental setup description is confusing. First, the authors say that the laser cavity is composed by 5 mirrors, then for the 522 nm laser they used a three mirror cavity, and for the 639 nm laser a three mirror cavity too. Later in the text there is mention to a 6 mirror cavity, this is quite confusing. In addition, there is no estimation of the waist size in the gain media, or how is this matched to the pump laser modes.
+
+- The authors state that: ¡°It should be pointed out that the pump power was injected into the laser crystal one by one. That is to say, the left-side pump source was first used with output power increasing from zero to maximum, and then the right-side pump source was started. This could explain the output power characteristics of the red and green laser, as shown in Fig. 2 that there are slow increasing areas starting from about 1.4 W of absorbed pump power, which corresponded to the start-up of the right-side pump source. In fact, the introduction of the right-side pump source increased the pump power absolutely, but also increased the pump volume inside the laser crystal. As a result, it led to the decrease of average pump intensity, and therefore the standstill of the output power.¡±
+In this regard, I cannot understand how the slope can decrease at 1.4W and then increase at 2.3W to more than 57.3%. If the reason why the slope efficiency decreases is because there is a less efficient coupling between the second pump laser and the cavity mode, this should be reflected as a change to a lower slope for all values higher than 1.4W, without the revamp at 2.3W.
+
+- In Figure 3 it should read FWHM not HWFM.
+
+- In Figure 4, the results seem to have aliasing or somehow low pass filtered. The laser pulses are not time resolved even though the detector can resolve 0.7 ns and the scope 0.4 ns (500 MHz retrieves a time resolution of 2 ns).
+
+- Most of the model content is already in text books or Bai¡¯s paper (reference 9), and so it does not need to be repeated here. Additionally, equation (3) presents a modulation function that is independent of intensity. This is rather surprising.
+Similarly, there is no real need for equation 4, since the loss is not distributed along the resonator. The loss can be implemented just multiplying the pulse amplitude by the factor L.
+
+- Figure 7 and 8 says ¡®Stimulated spectrum¡¯. Do the authors refer to ¡®simulated spectrum instead¡¯?
+
+- There is no measurement of pulse duration, which would help to validate the model as well as the interpretation of the results. 
